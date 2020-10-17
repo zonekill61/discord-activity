@@ -1,0 +1,28 @@
+{
+  "name": "discord-activity",
+  "version": "1.0.0",
+  "description": "",
+  "typings": "index.d.ts",
+  "main": "dist",
+  "scripts": {
+    "build": "tsc --build tsconfig.json"
+  },
+  "author": "zonekill61",
+  "license": "MIT",
+  "homepage": "https://github.com/zonekill61/discord-activity#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zonekill61/discord-activity.git"
+  },
+  "dependencies": {
+    "@types/deep-equal": "^1.0.1",
+    "@types/events": "^3.0.0",
+    "@types/node": "^14.11.8",
+    "@types/uuid": "^8.3.0",
+    "deep-equal": "^2.0.4",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "events": "^3.2.0",
+    "uuid": "^8.3.1"
+  }
+}

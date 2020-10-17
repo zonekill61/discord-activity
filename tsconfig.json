@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "allowJs": true,
+      
+      "sourceMap": true,
+      "outDir": "./dist",
+      // "declaration": true,
+      
+      "strict": true,
+      "noImplicitAny": true,
+      
+      "moduleResolution": "node",
+      "baseUrl": ".",
+      
+      "typeRoots": [
+        "./node_modules/@types",
+        "./typings"
+      ],
+      
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "preserveSymlinks": true,
+      "allowUmdGlobalAccess": true,
+      
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      
+      "resolveJsonModule": true,
+    },
+    "include": [
+      "src/**/*"
+    ]
+  }
