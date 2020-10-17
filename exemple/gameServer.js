@@ -56,10 +56,6 @@ activityClient.on('ready', async () => {
     }, 1500);
 });
 
-activityClient.on('mounted', (activity) => {
-    console.log(activity, 'mounted', activityClient._updatePending);
-})
-
 activityClient.on('error', async (err) => {
     console.log('Client error');
     console.error(err);
