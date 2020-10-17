@@ -204,6 +204,7 @@ declare namespace discordActivity {
     export class MessageEmbedComponent extends Component<MessageEmbedComponentOptions> {
         constructor(props?: MessageEmbedComponentProps): this
 
+        addField(name: Discord.StringResolvable, value: Discord.StringResolvable, inline?: boolean): boolean;
         addFields(...fields: Discord.EmbedFieldData[] | Discord.EmbedFieldData[][]): boolean;
         attachFiles(file: (Discord.MessageAttachment | Discord.FileOptions | string)[]): boolean;
         setAuthor(name: Discord.StringResolvable, iconURL?: string, url?: string): boolean;
