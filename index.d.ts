@@ -166,7 +166,6 @@ declare namespace discordActivity {
         content?: string
     }
     export interface MessageComponentProps extends BaseComponentProps {
-        options?: MessageComponentOptions
         name?: string
     }
     export class MessageComponent extends Component<MessageComponentOptions> {
@@ -198,7 +197,6 @@ declare namespace discordActivity {
         url?: string
     }
     export interface MessageEmbedComponentProps extends BaseComponentProps {
-        options: MessageEmbedComponentOptions
         name?: string
     }
     export class MessageEmbedComponent extends Component<MessageEmbedComponentOptions> {
