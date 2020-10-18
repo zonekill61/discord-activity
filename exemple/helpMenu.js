@@ -2,7 +2,6 @@ require('dotenv').config();
 const { DiscordActivity } = require('..');
 const Discord = require('discord.js');
 
-
 const activityClient = new DiscordActivity();
 
 var mainActivity = activityClient.createActivity({
@@ -16,37 +15,11 @@ component.setTitle("Help Menu");
 component.setAuthor("My server name");
 component.setThumbnail('https://github.com/google/material-design-icons/raw/master/png/action/help/materialicons/24dp/2x/baseline_help_black_24dp.png');
 component.setDescription('Display all available commands');
-component.addFields([
-    {
-        name: '\u200b',
-        value: '\u200b'
-    },
-    {
-        name: '!help',
-        value: 'Show this menu',
-        inline: true
-    },
-    {
-        name: '!ban :username:',
-        value: 'Banish Someone',
-        inline: true
-    },
-    {
-        name: '!ban :username:',
-        value: 'Banish Someone',
-        inline: true
-    },
-    {
-        name: '!mute :username:',
-        value: 'Mute Someone',
-        inline: true
-    },
-    {
-        name: '!kick :username:',
-        value: 'Exclude Someone',
-        inline: true
-    }
-])
+component.addField('\u200b', '\u200b');
+component.addField('!help', 'Show this menu', true);
+component.addField('!ban :username:', 'Show this menu', true);
+component.addField('!mute :username:', 'Mute Someone', true);
+component.addField('!kick :username:', 'Exclude Someone', true);
 
 var closeButton = component.addButton('❌');
 closeButton.setCooldown(1000);
