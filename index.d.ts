@@ -5,9 +5,14 @@ import Discord from "discord.js";
 declare namespace discordActivity {
     export type State = 'MOUNTED' | 'UNMOUNTED'
     export interface ActivityClientProps {
-        autoRemoveMessage?: boolean
-        removeAllMessage?: boolean
 
+        // if this option is enabled all new messages that have not been posted by the bot will be deleted, this does not include the old message.
+        autoRemoveMessage?: boolean
+
+        // if this option is enabled, all messages will be deleted when the bot starts, including old messages and the bot's message.
+        // ⚠ use this option with caution, don't use it in a chat channel use it in an empty channel especially for your bot, it could delete all messages from your channel ⚠
+        removeAllMessage?: boolean
+        
         client?: Discord.Client
     }
     export interface DiscordActivityEvents {
